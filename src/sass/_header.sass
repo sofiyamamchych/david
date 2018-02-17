@@ -1,0 +1,107 @@
+a
+  color: #000
+
+.header
+  background-color: #fff
+  width: 80%
+  margin-left: 10%
+  
+  ul
+    margin: 0
+    padding: 0
+    list-style: none
+    overflow: hidden
+    background-color: #fff
+  li a
+    display: block
+    font-size: 12px;
+    text-decoration: none
+    font-size: 16px
+
+    color: rgb(185, 185, 185)
+    
+    line-height: 1.2
+    padding: 12px
+    text-align: center
+    &:hover
+      background-color: #f4f4f4
+  .menu-btn:hover
+    background-color: #f4f4f4
+    
+  .header__actualpage
+    color:  rgb(232, 96, 60)
+  .header__logo
+    display: block
+    float: left
+    padding-left: 10px 20px
+    text-decoration: none
+    font-size: 40px
+    margin-left: 14px
+    
+
+  .menu
+    clear: both
+    max-height: 0
+    transition: max-height .2s ease-out
+  .menu-icon
+    cursor: pointer
+    display: inline-block
+    float: right
+    padding: 28px 20px
+    position: relative
+    user-select: none
+    .navicon
+      background: #333
+      display: block
+      height: 2px
+      position: relative
+      transition: background .2s ease-out
+      width: 18px
+      &:before, &:after
+        background: #333
+        content: ''
+        display: block
+        height: 100%
+        position: absolute
+        transition: all .2s ease-out
+        width: 100%
+      &:before
+        top: 5px
+      &:after
+        top: -5px
+  .menu-btn
+    display: none
+    &:checked ~
+      .menu
+        max-height: 312px
+      .menu-icon
+        .navicon
+          background: transparent
+          &:before
+            transform: rotate(-45deg)
+          &:after
+            transform: rotate(45deg)
+        &:not(.steps) .navicon
+          &:before, &:after
+            top: 0
+
+
+.header:after
+    content: ""
+    display: table
+    clear: both
+
+@media (min-width: 48em)
+  .header
+    li
+      float: left
+      a
+        padding: 20px 15px
+    .menu
+      clear: none
+      float: right
+      max-height: none
+    .menu-icon
+      display: none
+      
+
