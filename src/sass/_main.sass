@@ -16,10 +16,13 @@
 =default-font-bold($deffont)
   font-family: Fregat-bold
   font-size: $deffont 
+  
+=background-green
+  color: rgb(76, 176, 39)  
 
 h2
   @include default-font-bold(24px)
-  color: rgb(76, 176, 39)
+  @include background-green
   line-height: 1.2
   text-transform: uppercase
   margin-bottom: 29px
@@ -35,7 +38,7 @@ p
 .btn
   font-size: 13px
   font-family: 'PT Sans', sans-serif
-  color: rgb(99, 185, 69)
+  @include background-green
   font-weight: bold
   text-transform: uppercase
   line-height: 1.606
@@ -48,7 +51,7 @@ p
   text-decoration: none  
 
 .btn:hover
-  background-color: rgb(99, 185, 69)
+  background-color: rgb(76, 176, 39)
   color: white
-  border: 2px solid rgb(99, 185, 69)
+  border: 2px solid rgb(76, 176, 39)
 
