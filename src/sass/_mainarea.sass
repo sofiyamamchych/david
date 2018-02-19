@@ -15,7 +15,7 @@
 .forwhom
   background-color: rgb(76, 176, 39)    
   display: flex
-  flex-direction: row
+  flex-direction: column
   justify-content: space-between
   font-family: 'PT Sans', sans-serif
   font-size: 13px
@@ -23,8 +23,16 @@
   line-height: 1.5
   text-align: left
 
+.forwhom__headline
+  padding: 83px 0 40px 0
+  
+.forwhom__headline h3
+  text-align: center  
 
-
+.forwhom__list
+  padding-top: 35px
+  padding-left: 35px
+  text-align: center
 
 @media (min-width: 960px)
   
@@ -47,3 +55,18 @@
   .about__buttons
     display: block
     text-align: left
+  
+  .forwhom
+    flex-direction: row
+   
+  .forwhom__list 
+    text-align: left
+    width: 54%
+    
+  .forwhom__headline
+    padding-left: 87px
+    padding-bottom: 87px
+    
+  .forwhom__headline h3
+    text-align: left  
+  
