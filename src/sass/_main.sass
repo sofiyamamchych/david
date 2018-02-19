@@ -2,8 +2,21 @@
   font-family: Fregat
   src: url("../fonts/Fregat.ttf")
   
+@font-face
+  font-family: Fregat-bold
+  src: url("../fonts/Fregat_bold.ttf")
+  
 
 =default-font($deffont)
   font-family: Fregat
   font-size: $deffont  
+  
+=default-font-bold($deffont)
+  font-family: Fregat-bold
+  font-size: $deffont 
 
+h2
+  @include default-font-bold(24px)
+  color: rgb(76, 176, 39)
+  line-height: 1.2
+  text-transform: uppercase
