@@ -17,16 +17,22 @@
   font-family: Fregat-bold
   font-size: $deffont 
   
-=background-green
+=color-green
   color: rgb(76, 176, 39)  
 
 h2
   @include default-font-bold(24px)
-  @include background-green
+  @include color-green
   line-height: 1.2
   text-transform: uppercase
   margin-bottom: 29px
 
+h3
+  @include default-font-bold(18px)         
+  color: rgb(255, 255, 255)
+  text-transform: uppercase
+  line-height: 1.5
+  text-align: left
 p
   font-size: 17px
   font-family: 'PT Sans', sans-serif
@@ -38,7 +44,7 @@ p
 .btn
   font-size: 13px
   font-family: 'PT Sans', sans-serif
-  @include background-green
+  @include color-green
   font-weight: bold
   text-transform: uppercase
   line-height: 1.606
