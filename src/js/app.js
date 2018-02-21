@@ -1,3 +1,8 @@
-import sayHello from './lib/sayHello.js';
+import 'slick-carousel';
 
-sayHello();
+$(document).ready(function() {
+  $('.carousel').slick({
+    prevArrow: '.carousel__prevpng',
+    nextArrow: '.carousel__nextpng'
+  });
+});
