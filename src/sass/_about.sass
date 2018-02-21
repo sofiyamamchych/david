@@ -1,0 +1,36 @@
+.about img
+  width: 100%
+  
+.about p
+  padding: 10px
+
+.about__buttons
+  text-align: center
+  display: flex
+  flex-direction: column
+
+.about__buttons a
+  margin-bottom: 32px
+  
+
+
+@media (min-width: 960px)
+  .about__img
+    display: none  
+  
+  .about
+    background-image: url("../img/workout.png")
+    background-size: cover
+    min-height: 268px
+    padding: 97px 50% 22px 33px
+    
+  .about__headline h2
+    @include color-green
+    
+  .about p
+    width: 81%
+    padding: 0
+    
+  .about__buttons
+    display: block
+    text-align: left
