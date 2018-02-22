@@ -23,7 +23,8 @@
   margin-top: 28px
 
 .what__list
-  padding: 50px 8px 50px 50px
+  padding: 2px 8px 50px 50px
+  margin-top: -50px
   
 .what__listul  
   list-style-image: url("../img/ul2.png")
@@ -32,7 +33,7 @@
   font-family: 'PT Sans', sans-serif
   
 .what__listul li
-  maargin-bottom: 9px
+  margin-bottom: 9px
 
 .what__warning p
   font-family: 'PT Sans', sans-serif  
@@ -59,6 +60,7 @@
 .carousel__prev, .carousel__next
   position: relative
   z-index: 200
+  display: none
   
 .carousel__arrowimg
   border: 1px solid rgb(76, 176, 39) 
@@ -86,6 +88,10 @@
 .slick-dots li button:before
   content: ''
   
+@media (min-width: 680px)
+  .slick-dots
+    top: -80px
+      
 @media (min-width: 960px)
     
   .what__list
@@ -93,3 +99,6 @@
   
   .ul-col2
     margin-left: 32px
+  
+  .slick-dots
+    top: -120px
